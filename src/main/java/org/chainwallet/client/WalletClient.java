@@ -17,13 +17,14 @@ public class WalletClient {
 
     private String token;
 
-    private String domain = "http://127.0.0.1:8802/finance";
+    private String domain;
 
     public WalletClient(){}
 
-    public WalletClient(String appId, String token){
+    public WalletClient(String appId, String token, String domain){
         this.appId = appId;
         this.token = token;
+        this.domain = domain;
     }
 
     public void init(String url, Map<String, String> param){

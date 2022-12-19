@@ -13,11 +13,13 @@ public class WalletClientTest {
 
     private static String token = "YnQGCbCurtNuQEDGKbUAXQktH372lbFW";
 
+    private static String domain = "http://127.0.0.1:8802/finance";
+
     private static String merchantId = "1";
 
     public static void main(String[] args) {
 
-        WalletClient walletClient = new WalletClient(WalletClientTest.appId, WalletClientTest.token);
+        WalletClient walletClient = new WalletClient(WalletClientTest.appId, WalletClientTest.token, WalletClientTest.domain);
 
         // 获取网络和币的配置表
         ChainAndCoinBo bo = new ChainAndCoinBo();
