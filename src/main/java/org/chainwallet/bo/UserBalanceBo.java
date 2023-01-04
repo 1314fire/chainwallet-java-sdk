@@ -4,9 +4,6 @@ import lombok.Data;
 
 @Data
 public class UserBalanceBo {
-    // 商户 ID
-    private String merchant_id;
-
     // APP ID
     private String app_id;
 

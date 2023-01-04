@@ -86,7 +86,6 @@ public class WalletClientTest {
         // 获取用户余额
         UserBalanceBo bo9 = new UserBalanceBo();
         bo9.setApp_id(WalletClientTest.appId);
-        bo9.setMerchant_id(WalletClientTest.merchantId);
         bo9.setUid("104725");
         List<UserBalanceVo> res9 = walletClient.getUserBalance(bo9);
         System.out.println(JSONObject.toJSONString(res9));
